@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:orientation="horizontal"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	>
+	    <!-- Thread list -->
+		<LinearLayout 
+		    android:orientation="vertical"
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="0.2"
+		    >
+		    <TextView 
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center"
+		    	android:text="Open Conversations" />
+		    <ListView android:id="@android:id/list"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:stackFromBottom="false"
+		        android:layout_gravity="bottom"
+		        android:transcriptMode="alwaysScroll"
+		        android:layout_weight="0.2"
+		    	/>
+			<Button android:id="@+id/newThread"
+				android:name="New thread button"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="New Conversation"
+				/>
+		    <EditText
+		    	android:id="@+id/sendToEditText"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:inputType="phone"
+		    	android:hint="Phone Number"
+		    	/>
+		</LinearLayout>
+		<!-- End thread list -->
+		
+	    <!-- Conversation -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="vertical"
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="0.8"
+		    >
+		    <ListView android:id="@+id/messages"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:stackFromBottom="true"
+		        android:transcriptMode="alwaysScroll"
+		        android:layout_weight="1"
+		    />
+		    <LinearLayout
+		        android:orientation="horizontal"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        >
+		        <EditText android:id="@+id/edit_text_out"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="0.9"
+		            android:layout_gravity="bottom"
+		            android:hint="Type to compose"
+		            android:inputType="textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine"
+		        	/>
+		        <Button android:id="@+id/button_send"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/send"
+		        	/>
+		    </LinearLayout>
+		</LinearLayout>
+	    <!-- End conversation -->
+	    
+	    
+    </LinearLayout>
+    
+</LinearLayout>

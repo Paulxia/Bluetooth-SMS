@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent"
+	android:orientation="horizontal">
+		<TextView
+			android:id="@+id/contact_name"
+			android:text="John Smith"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:textSize="20sp"
+		    />
+		<QuickContactBadge
+			android:id="@+id/contact_badge"
+			android:layout_width="15dp"
+			android:layout_height="15dp"
+			android:src="@android:drawable/sym_contact_card"
+			android:visibility="gone"
+			/>
+	</LinearLayout>
+	<TextView 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="right"
+		android:textSize="14sp"
+		android:id="@+id/display_number"
+		android:text="410-111-1111"
+		/>
+</LinearLayout>

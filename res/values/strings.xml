@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Bluetooth Sms</string>
+
+    <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected: </string>
+    <string name="title_not_connected">not connected</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- Options Menu -->
+    <string name="connect">Connect a device</string>
+    <string name="discoverable">Make discoverable</string>
+    <string name="preferences">Preferences</string>
+    
+    
+    
+    <string name="crash_toast_text">Oops! Please send a crash report!</string>
+	<string name="crash_notif_ticker_text">Unexpected error, please send a report...</string>
+	<string name="crash_notif_title">BluetoothSms Crashed</string>
+	<string name="crash_notif_text">Click here to send crash report.</string>
+    
+	<string name="crash_dialog_title">CrashTest has crashed</string>
+	<string name="crash_dialog_text">An error occured. Please click OK to send a crash report.</string>
+	<string name="crash_dialog_comment_prompt">Enter any comments you have:</string>
+	<string name="crash_dialog_ok_toast">Thank you!</string>
+    
+</resources>

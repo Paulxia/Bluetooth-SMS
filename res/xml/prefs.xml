@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Defaults">
+		<CheckBoxPreference
+			android:title="Enable"
+			android:summary="Enable message notifications"
+			android:defaultValue="true"
+			android:key="enabled" />
+		<RingtonePreference
+			android:key="ringtone"
+			android:title="Ringtone"
+			android:showDefault="true"
+			android:showSilent="true"
+			android:defaultValue="DEFAULT_NOTIFICATION_URI"
+			android:ringtoneType="notification"
+			android:summary="Message notification ringtone" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Conversation Options">
+		<EditTextPreference
+			android:key="convMax"
+			android:title="Max number of messages per conversation"
+			android:numeric="integer"
+			android:defaultValue="100"
+			android:summary="After a conversation reaches this limit, the oldest messages will be deleted" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Others">
+		<CheckBoxPreference 
+			android:title="Clear messages on exit"
+			android:summary="Clear all messages on tablet on exit"
+			android:defaultValue="false"
+			android:key="clear" />
+	</PreferenceCategory>
+</PreferenceScreen>

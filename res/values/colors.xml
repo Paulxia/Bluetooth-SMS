@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="selected">#FF6f9dd1</color>
+        <color name="unread">#FFe0dd7e</color>
+        <color name="actionbar">#FF171717</color>
+</resources>
