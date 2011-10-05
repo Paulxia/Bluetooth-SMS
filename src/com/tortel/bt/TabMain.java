@@ -253,6 +253,10 @@ public class TabMain extends ListActivity {
 	        
         // Initialize the BluetoothChatService to perform bluetooth connections
         mChatService = BluetoothChatService.getInstance();
+        
+        //Start the RunnerService, to keep this in memory
+        Intent service = new Intent(this, RunnerService.class);
+        startService(service);
 
         // Initialize the buffer for outgoing messages
         mOutStringBuffer = new StringBuffer("");

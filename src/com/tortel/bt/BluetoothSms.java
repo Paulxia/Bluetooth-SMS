@@ -68,7 +68,7 @@ public class BluetoothSms extends Activity {
         
         if(D) Log.d("+++ ON CREATE +++");
         
-        if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.GINGERBREAD)
+        if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.HONEYCOMB)
         	Type.TYPE = Type.PHONE;
         else
         	Type.TYPE =Type.TAB;
@@ -157,6 +157,10 @@ public class BluetoothSms extends Activity {
         
         // Initialize the BluetoothChatService to perform bluetooth connections
         mChatService = new BluetoothChatService(this, mHandler);
+        
+        //Start the RunnerService, to keep this in memory
+        Intent service = new Intent(this, RunnerService.class);
+        startService(service);
 
         // Initialize the buffer for outgoing messages
     }
